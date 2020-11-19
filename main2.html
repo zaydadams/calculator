@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main2.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        function calcNumbers(result){
+            form.displayResult.value=form.displayResult.value+result;
+    }
+    </script>
+    <div class="container">
+        <form name="form">
+        <div class="display">
+        <input type="text" placeholder="0" name="displayResult" />
+    </div>
+  <div class="buttons">
+    <div class="row">
+<input type="button" name="b7" value="7"
+onclick="calcNumbers(b7.value)">
+ <input type="button" name="b8" value="8"
+onclick="calcNumbers(b8.value)">
+ <input type="button" name="b9" value="9"
+onclick="calcNumbers(b9.value)">
+ <input type="button" name="addB" value="+"
+onclick="calcNumbers(addB.value)">
+</div>
+
+<div class="row">
+<input type="button" name="b4" value="4"
+onclick="calcNumbers(b4.value)">
+ <input type="button" name="b5" value="5"
+onclick="calcNumbers(b5.value)">
+ <input type="button" name="b6" value="6"
+onclick="calcNumbers(b4.value)">
+ <input type="button" name="subB" value="-"
+onclick="calcNumbers(subB.value)">
+</div>
+
+<div class="row">
+  <input type="button" name="b1" value="1"\
+onclick="calcNumbers(b1.value)">
+<input type="button" name="b2" value="2"\
+onclick="calcNumbers(b2.value)">
+<input type="button" name="b3" value="3"\
+onclick="calcNumbers(b3.value)">
+<input type="button" name="mulB" value="*"\
+onclick="calcNumbers(mulB.value)">
+</div>  
+
+<div class="row">
+<input type="button" name="b0" value="0"
+onclick="calcNumbers(b0.value)">
+ <input type="button" name="dotB" value="."
+onclick="calcNumbers(dotB.value)">
+ <input type="button" name="divB" value="/"
+onclick="calcNumbers(divB.value)">
+ <input type="button" class="blue" value="="
+ onclick="displayResult.value=eval(displayResult.value)"> 
+</div>
+</div>
+
+</form>
+</div>
+    
+</body>
+</html>
